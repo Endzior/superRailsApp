@@ -1,0 +1,17 @@
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <ul>
+      <%= link_to article.title, article_path(article) %>
+    </ul>
+  <% end %>
+</table>
+<br>
+<%= link_to 'New article', new_article_path %>
+<%= link_to 'Back to main page', welcome_index_path %>
