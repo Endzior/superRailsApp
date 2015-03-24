@@ -13,7 +13,7 @@
       <% if can? :update, @article %>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <%end %>
-  <% if can? :delete, @article %>
+      <% if can? :destroy, @article %>
       <td><%= link_to 'Delete', article_path(article),
               method: :delete,
   data: { confirm: 'Are you sure, you will delete this article' } %></td>
