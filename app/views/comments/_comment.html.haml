@@ -1,0 +1,12 @@
+%p
+  %strong Commenter
+  %br/
+  = comment.commenter
+  %br/
+  %strong Comment
+  %br/
+  = comment.body
+  - if can? :destroy, comment
+    = link_to 'Delete', [comment.article, comment], |
+      method: :delete,                              |
+      data: { confirm: 'Are you sure?' }            |

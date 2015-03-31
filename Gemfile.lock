@@ -189,6 +189,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   haml-rails (~> 0.9)
+  html2haml
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)
