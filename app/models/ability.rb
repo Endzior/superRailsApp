@@ -10,7 +10,7 @@ class Ability
       else
         can :read, :all
         can :manage, Comment do |comment|
-          Comment.try(:commenter) == user.email
+          comment.try(:commenter) == user.email
         end
         cannot :update, Article
         cannot :destroy, Article

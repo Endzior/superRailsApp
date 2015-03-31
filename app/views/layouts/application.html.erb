@@ -11,7 +11,6 @@
     <%= flash[:notice] if flash[:notice] %>  
     <%= flash[:alert] if flash[:alert] %>  
   </div>
-  <br>
   <% if user_signed_in? %>
     Hello, 
     <%= current_user.full_name %>
@@ -21,6 +20,7 @@
   <% else %>
     <%= link_to "Sign in", new_user_session_path, method: :new %>
   <% end %>
+  
 <%= yield %>
 
 </body>
