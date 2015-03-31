@@ -3,8 +3,11 @@
       <%= comment.commenter %><br>
     <strong>Comment</strong><br>
     <%= comment.body %>
-  <%= link_to 'Delete', [comment.article, comment],
+  
+  <% if can? :destroy, comment %>
+    <%= link_to 'Delete', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>  
+  <% end %>
 </p>
 
