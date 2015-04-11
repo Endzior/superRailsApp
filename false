@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20150411172356_add_redactor_to_users.rb
