@@ -4,20 +4,24 @@
     %td.tg-record= user.email
     %td.tg-record= user.first_name
     %td.tg-record= user.last_name
-    %td.tg-record 
-      %select{:name => "adminSelect"}
-        - if user.admin
-          %option{:value => "true", :selected => "selected"} True
-          %option{:value => "false"} False
-        - else
-          %option{:value => "true"} True
-          %option{:value => "false", :selected => "selected"} False
-    %td.tg-ghao
-      %select{:name => "redactorSelect"}
-        - if user.redactor
-          %option{:value => "true", :selected => "selected"} True
-          %option{:value => "false"} False
-        - else
-          %option{:value => "true"} True
-          %option{:value => "false", :selected => "selected"} False
-        
+    - if user.id != current_user.id
+      %td.tg-record 
+        %select{:name => "adminSelect"}
+          - if user.admin
+            %option{:value => "true", :selected => "selected"} True
+            %option{:value => "false"} False
+          - else
+            %option{:value => "true"} True
+            %option{:value => "false", :selected => "selected"} False
+      %td.tg-ghao
+        %select{:name => "redactorSelect"}
+          - if user.redactor
+            %option{:value => "true", :selected => "selected"} True
+            %option{:value => "false"} False
+          - else
+            %option{:value => "true"} True
+            %option{:value => "false", :selected => "selected"} False
+    - else
+      %td.tg-record= user.admin
+      %td.tg-record= user.redactor
+
