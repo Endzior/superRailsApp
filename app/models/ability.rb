@@ -8,12 +8,18 @@ class Ability
       if user.admin?
         can :manage, :all
       else
-        can :read, :all
-        can :manage, Comment do |comment|
-          comment.try(:commenter) == user.email
+        if user.redactor?
+          can :read, :all
+          can :manage, Comment
+          can :manage, Article
+        else
+          can :read, :all
+          can :manage, Comment do |comment|
+            comment.try(:commenter) == user.email
+          end
+          cannot :update, Article
+          cannot :destroy, Article
         end
-        cannot :update, Article
-        cannot :destroy, Article
       end
     #
     # The first argument to `can` is the action you are giving the user
