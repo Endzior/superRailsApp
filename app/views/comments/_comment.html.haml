@@ -1,13 +1,12 @@
-%p
-  .panel.panel-default
-    .panel-heading
-      %strong.panel-title= comment.commenter
-    .panel-body
-      = comment.body
-      - if can? :destroy, comment
-        = link_to 'Delete', [comment.article, comment], |
-          method: :delete,                              |
-          data: { confirm: 'Are you sure?' }            |
+.panel.panel-default
+  .panel-heading
+    %strong.panel-title= comment.commenter
+  .panel-body
+    = comment.body
+    - if can? :destroy, comment
+      = link_to 'Delete', [comment.article, comment], |
+        method: :delete,                              |
+        data: { confirm: 'Are you sure?' }            |
 
 
 
