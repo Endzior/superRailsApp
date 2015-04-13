@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   
 
   get 'management' => 'management#index'
-
-  post 'management/update'
+  put 'management/update'
 
   devise_for :users
 

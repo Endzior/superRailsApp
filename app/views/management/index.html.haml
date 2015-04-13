@@ -1,22 +1,15 @@
-%table.tg
-  %tr
-    %th.tg-title ID
-    %th.tg-title E-Mail
-    %th.tg-title First Name
-    %th.tg-title Last Name
-    %th.tg-title Admin?
-    %th.tg-title Redactor?
-  -#%tr
-    %td.tg-record 1
-    %td.tg-record namespace@name.space
-    %td.tg-record name
-    %td.tg-record space
-    %td.tg-record 
-      %select{:name => "adminSelect"}
-        %option{:value => "true"} True
-        %option{:value => "false"} False
-    %td.tg-ghao
-      %select{:name => "redactorSelect"}
-        %option{:value => "true"} True
-        %option{:value => "false", :selected => "selected"} False
-  = render 'row'
+= form_tag management_update_path, :method => :put do
+  %table.tg
+    %tr
+      %th.tg-title ID
+      %th.tg-title E-Mail
+      %th.tg-title First Name
+      %th.tg-title Last Name
+      %th.tg-title Admin?
+      %th.tg-title Redactor?
+    - @users.each do |user|
+      %tr
+        = fields_for "users[]", user do |f|
+          = render 'row', :user => user, :f => f
+
+  = submit_tag 'Update'
