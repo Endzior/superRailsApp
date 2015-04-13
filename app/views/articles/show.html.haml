@@ -3,11 +3,17 @@
     = @article.title
 %p
   = @article.text
-%h3 Comments :
-= render @article.comments
+  
+
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title Comments
+  .panel-body
+    = render @article.comments
 - if user_signed_in?
   %h2 Add a comment:
   = render 'comments/form'
 = link_to 'Back', articles_path
-|
-= link_to 'Edit', edit_article_path(@article)
+- if can? :manage, @article
+  |
+  = link_to 'Edit', edit_article_path(@article)
