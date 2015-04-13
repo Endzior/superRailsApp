@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
 
-  get 'management' => 'management#index'
+  get 'management/user' => 'management#user'
+  get 'management/article' => 'management#article'
   put 'management/update'
 
   devise_for :users

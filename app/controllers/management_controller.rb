@@ -1,5 +1,5 @@
 class ManagementController < ApplicationController
-  def index
+  def user
     @users = User.all
   end
 
@@ -14,6 +14,9 @@ class ManagementController < ApplicationController
     end
   end
   
+  def article
+    @articles = Article.all
+  end
   
   private
   def management_params

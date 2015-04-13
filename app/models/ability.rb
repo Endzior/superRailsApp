@@ -9,7 +9,6 @@ class Ability
         can :manage, :all
       else
         if user.redactor?
-          can :read, :all
           can :manage, Comment
           can :manage, Article
         else

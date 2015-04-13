@@ -1,10 +1,9 @@
 %p
-  %strong Title:
-  = @article.title
+  %h1
+    = @article.title
 %p
-  %strong Text:
   = @article.text
-%h2 Showing comments :
+%h3 Comments :
 = render @article.comments
 - if user_signed_in?
   %h2 Add a comment:
