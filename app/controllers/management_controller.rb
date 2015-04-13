@@ -27,4 +27,6 @@ class ManagementController < ApplicationController
       end
     end
     return false
+  end
+  
 end
