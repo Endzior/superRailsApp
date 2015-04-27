@@ -24,7 +24,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -84,6 +84,26 @@
         null,
         null
       ],
+      "/home/action/workspace/rails4.2/spec/features/articles_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/home/action/workspace/rails4.2/spec/features/home_page_spec.rb": [
         1,
         null,
@@ -135,20 +155,20 @@
         1,
         null,
         null,
-        3,
-        3,
+        4,
+        4,
         1,
         null,
-        2,
+        3,
         0,
         0,
         null,
-        2,
-        2,
+        3,
+        3,
         0,
         null,
-        2,
-        2,
+        3,
+        3,
         null,
         null,
         null,
@@ -178,6 +198,6 @@
         null
       ]
     },
-    "timestamp": 1430141919
+    "timestamp": 1430141982
   }
 }
