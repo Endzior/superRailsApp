@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe ArticlesController do
   describe 'index' do
-    it 'returns articles' do
+    it 'return articles' do
       article = create(:article)
       get :index
       
