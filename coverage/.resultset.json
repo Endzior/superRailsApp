@@ -84,6 +84,19 @@
         null,
         null
       ],
+      "/home/action/workspace/rails4.2/spec/features/home_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
       "/home/action/workspace/rails4.2/spec/models/user_spec.rb": [
         1,
         null,
@@ -165,6 +178,6 @@
         null
       ]
     },
-    "timestamp": 1430141062
+    "timestamp": 1430141919
   }
 }

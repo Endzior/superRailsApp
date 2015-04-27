@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-27T13:24:22+00:00">2015-04-27T13:24:22+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-27T13:38:39+00:00">2015-04-27T13:38:39+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">75.71%</span></span>
+    (<span class="covered_percent"><span class="red">77.63%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.94
+         0.95
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>8</b> files in total.
-    <b>70</b> relevant lines. 
-    <span class="green"><b>53</b> lines covered</span> and
+    <b>9</b> files in total.
+    <b>76</b> relevant lines. 
+    <span class="green"><b>59</b> lines covered</span> and
     <span class="red"><b>17</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -112,6 +112,16 @@
       
       <tr>
         <td class="strong"><a href="#e42c084a5111d67454ccf62e0e6aa312008ad590" class="src_link" title="spec/controllers/welcome_controller_spec.rb">spec/controllers/welcome_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ee147897f5dcff709fd1fc65c15efcbb22ac7b79" class="src_link" title="spec/features/home_page_spec.rb">spec/features/home_page_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
         <td>6</td>
@@ -998,6 +1008,90 @@
           <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="ee147897f5dcff709fd1fc65c15efcbb22ac7b79">
+  <div class="header">
+    <h3>spec/features/home_page_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;home page&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;user visits home page&#39;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;user sees home page&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&#39;Privet cyka&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
