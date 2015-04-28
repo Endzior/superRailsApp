@@ -2,8 +2,9 @@
   %h1
     = @article.title
 %p
+  = image_tag @article.picture.url(:medium)
+%p
   = @article.text
-  
 
 .panel.panel-default
   .panel-body
