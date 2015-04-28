@@ -28,7 +28,7 @@ gem 'cancancan', '~> 1.10'
 gem 'twitter-bootstrap-rails'
 gem "haml-rails", "~> 0.9"
 gem 'html2haml'
-
+gem 'paperclip', '~> 4.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
