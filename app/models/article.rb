@@ -1,4 +1,6 @@
 class Article < ActiveRecord::Base
+  attr_accessor :remove_picture
+  
   has_many :comments, dependent: :destroy
   has_attached_file :picture, :styles => { :medium => "300x300", :thumb => "100x100" }
   validates_attachment_file_name :picture, :matches => [/gif\Z/, /png\Z/, /jpe?g\Z/]
