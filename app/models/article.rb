@@ -8,4 +8,11 @@ class Article < ActiveRecord::Base
   validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
   validates :title, presence: true,
                     length: { minimum: 5 }
+  
+  before_save :delete_picture, if: ->{ remove_picture == '1' && !picture_updated_at_changed? }
+  
+  private
+  def delete_picture
+    self.picture = nil
+  end
 end
