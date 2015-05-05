@@ -15,4 +15,5 @@
           - if can? :manage, Article
             %li= link_to "Article Management", management_article_path
         - else
-          %li= link_to "Sign in",  new_user_session_path, method: :new
+          %li= link_to "Sign in", new_user_session_path, method: :new
+          %li= link_to "Sign up", new_user_registration_path, method: :get
